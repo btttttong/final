@@ -9,14 +9,12 @@ def find_dup(inp):
         else:
             counter[i] += 1
 
-    print(counter)
-    # return counter
-
-    for item in counter:
-        if counter[item] > 2:
+    # print(counter)
+    for item in counter.values():
+        if item >= 2:
             dup_num += 1
-    print(dup_num)
 
-find_dup('abcde')
-find_dup('aabbcde')
+    return dup_num
+
+print(find_dup('ABBA'))
 

@@ -1,6 +1,4 @@
 import math
-
-
 def check_sum(number):
     check_sum_num = 0
     reverse_num = number[::-1]
@@ -18,14 +16,13 @@ def check_sum(number):
 
         sumi += resi
 
-    print(sumi)
     if sumi == 10:
         check_sum_num = 0
     else:
-        check_sum_num = 10 - sumi%10
-    print(check_sum_num)
+        check_sum_num = 10 - sumi % 10
+
     return check_sum_num
 
 
-check_sum('7992739871')
-check_sum('62')
+print(check_sum('7992739871'))
+print(check_sum('62'))

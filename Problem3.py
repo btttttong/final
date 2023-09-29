@@ -3,16 +3,14 @@ def return_middle(inp):
         middle = int(len(inp) / 2)
         mid_str = ''
         if len(inp) % 2 == 0:
-            print(inp[middle - 1] + inp[middle])
             return inp[middle - 1] + inp[middle]
         else:
-            print(inp[middle])
             return inp[middle]
     else:
         return 'empty string'
 
 
-return_middle('test')
-return_middle('testing')
-return_middle('middle')
-return_middle('0')
+print(return_middle('test'))
+print(return_middle('testing'))
+print(return_middle('middle'))
+print(return_middle('0'))
