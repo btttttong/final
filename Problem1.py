@@ -16,11 +16,7 @@ def check_sum(number):
 
         sumi += resi
 
-    if sumi == 10:
-        check_sum_num = 0
-    else:
-        check_sum_num = 10 - sumi % 10
-
+    check_sum_num = (10 - sumi % 10) % 10
     return check_sum_num
 
 
